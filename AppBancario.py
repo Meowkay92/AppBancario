@@ -56,7 +56,7 @@ def exibirExtrato(saldo, extrato):
 def criarUsuario(usuarios):
     cpf = input("Informe o CPF (somente números): ")
 
-    # Validação do CPF com expressão regular
+    # Validação do CPF
     if not re.match(r'^\d{11}$', cpf):
         print("\n### CPF inválido! Deve conter 11 dígitos. ###")
         return
@@ -67,7 +67,7 @@ def criarUsuario(usuarios):
         nome = input("Informe o nome completo: ")
         dataNascimento = input("Informe a data de nascimento (dd-mm-aaaa): ")
 
-        # Validação da data de nascimento com expressão regular
+        # Validação da data de nascimento
         if not re.match(r'^\d{2}-\d{2}-\d{4}$', dataNascimento):
             print("\n### Data de nascimento inválida! Deve estar no formato dd-mm-aaaa. ###")
             return
