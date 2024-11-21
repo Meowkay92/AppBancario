@@ -49,7 +49,7 @@ def sacar(saldo, limite, numeroSaques, limiteSaques, extrato):
 
 def exibirExtrato(saldo, extrato):
     print("\n======= Extrato =======")
-    print("Nenhuma movimentação foi feita." if not extrato else extrato)
+    print("Nenhuma movimentação realizada." if not extrato else extrato)
     print(f"\nSaldo:\t\tR$ {saldo:.2f}")
     print("===========================")
 
@@ -83,7 +83,7 @@ def filtrarUsuario(cpf, usuarios):
     return None
 
 def criarConta(agencia, numeroConta, usuarios):
-    cpf = input("Informe o CPF do usuário: ")
+    cpf = input("Informe o CPF do: ")
     usuario = filtrarUsuario(cpf, usuarios)
 
     if usuario:
